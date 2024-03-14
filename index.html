@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Color Scheme Generator</h1>
+        <div class="container">
+            <div class="input-container">
+                <input type="color" id="seed-color" value="#7e3b3b">
+            </div>
+            <div class="input-container">
+                <select id="color-mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <button onclick="generateColorScheme()">Get Color Scheme</button>
+            </div>
+        </div>
+        <div id="color-scheme" class="color-scheme">
+            <div class="color-container">
+                <div class="color-box" style="background-color: #9b3f3f;"></div>
+                <div class="color-value">#FF0000</div>
+            </div>
+            <div class="color-container">
+                <div class="color-box" style="background-color: #5d895d;"></div>
+                <div class="color-value">#00FF00</div>
+            </div>
+            <div class="color-container">
+                <div class="color-box" style="background-color: #7575b5;"></div>
+                <div class="color-value">#0000FF</div>
+            </div>
+            <div class="color-container">
+                <div class="color-box" style="background-color: #93934f;"></div>
+                <div class="color-value">#FFFF00</div>
+            </div>
+            <div class="color-container">
+                <div class="color-box" style="background-color: #8e528e;"></div>
+                <div class="color-value">#FF00FF</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
